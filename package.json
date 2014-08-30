@@ -1,0 +1,9 @@
+{
+  "name": "nodebots",
+  "version": "0.0.0",
+  "description": "nodebots exercises with node and johnny five for arduino",
+  "dependencies": {
+    "johnny-five": "~0.8.8",
+    "keypress": "~0.2.1"
+  }
+}
