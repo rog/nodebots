@@ -9,17 +9,14 @@ five.Board().on("ready", function() {
 
   led = new five.Led(2);
 
-  setInterval( function(){
+  button.on("down", function(value) {
+    console.log("down");
+    status = ( status ) ? false : true;
     if( status ){
       led.on();
     } else {
       led.off();
     }
-  }, 100);
-
-  button.on("down", function(value) {
-    console.log("down");
-    status = ( status ) ? false : true;
   });
 
   button.on("up", function() {
